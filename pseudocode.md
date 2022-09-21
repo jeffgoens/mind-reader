@@ -75,3 +75,4 @@ FUNCTION clearMemory
  ```
  clearMemory
  ```
+![image](https://user-images.githubusercontent.com/101759410/191522587-49119355-1747-4173-bf3a-b0dbf96a8089.png)
