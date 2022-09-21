@@ -4,51 +4,69 @@
   - Are there any assumptions?
 
 
-### INIT: Define Variables
+### INIT: Define Variables??
 ```
-2. MAIN MOTOR UNIT = motorUnit
-    - Motorized device that operates/pulls the door open.  
+ RANDOMIZE symbols
+ 
 ```
+### STATE:
+```
+  card1
+    topText = active
+    goResetButton = active
+    nextButton = inactive
+    helpText = inactive
+    resetButton = inactive
+    
+  card2
+    topText = active
+    goResetButton = active
+    nextButton = active
+    helpText = active
+    resetButton = active
+    
+  card3
+    topText = active
+    goResetButton = active
+    nextButton = active
+    helpText = active
+    resetButton = active
+    
+   card4
+    topText = active
+    goResetButton = active
+    nextButton = active
+    helpText = active
+    resetButton = active  
 
+   card5
+    topText = active
+    goResetButton = active
+    nextButton = active
+    helpText = active
+    resetButton = active 
 
+   card6
+    topText = active
+    goResetButton = active
+    nextButton = active
+    helpText = active
+    resetButton = active 
+```
 ### FUNCTION:
  
 ```js
-FUNCTION checkDoorStatus:
-  IF door = open
-    THEN
-      do not accept passcode
-        END
-  ELSE 
-    door = closed
-      THEN
-        accept passcode
-          END
-        
-FUNCTION checkControlPanel
-  IF controlPanel = not paired to motorUnit
-    THEN
-      END
-  ELSE 
-    controlPanel = paired to motorUnit
-      accept passcode
-        END
+FUNCTION nextPage()
 
- FUNCTION checkPasscode:
-  IF passcode entered = correct
-    THEN
-      open door motorUnit and clearMemory     
-  ELSE 
-    passcode entered = wrong  
-      THEN
-        alert user and clearMemory
-          END
-          
-FUNCTION clearMemory
-  IF wrong passcode is entered OR door has been opened
-    THEN
-      clearMemory
-        END
+
+FUNCTION reset()
+
+
+FUNCTION shuffle()
+
+
+FUNCTION changePage()
+
 
  ```
  
