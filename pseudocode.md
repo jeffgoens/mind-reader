@@ -1,18 +1,11 @@
 ## Pseudocode for Mind Reader
 
 ### Assumptions:
-  - Opening function of a garage door can be operated remotely by a control panel.
-  - Control panel has to be located near garage door on adjoining garage door jam.
-  - Control panel is powered.
-  - User has basic knowledge on how a garage keypad functions.
-  - Main motor unit is powered.
+  - Are there any assumptions?
 
 
-### SET: Define Variables
+### INIT: Define Variables
 ```
-1. CONTROL PANEL = controlPanel
-    - Device that communicates to main motor unit.
-
 2. MAIN MOTOR UNIT = motorUnit
     - Motorized device that operates/pulls the door open.  
 ```
