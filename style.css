@@ -1,0 +1,49 @@
+body {
+    font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+    margin: 2em;
+    background-color: white;
+  }
+  
+  h1 {
+    font-style: none;
+    color: black;
+    height: 400px;
+  }
+
+  .card {
+    background-color: white;
+    height: 700px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    border-width: 5px; 
+    border-radius: 1em;
+    padding: 2em;
+    text-align: center;
+  }
+
+  .buttons {
+    align-items: center;
+  }
+
+  #nextButton {
+    position: relative;
+    bottom: 0;
+    margin-bottom: 1em;
+    height: 50px;
+    width: 325px;
+  }
+
+
+
+  #goResetButton {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 60px;
+    margin: 2em;
+    width: 75px;
+    font-size: 2rem;
+    border-radius: 100px;
+  }
+

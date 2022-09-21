@@ -6,7 +6,12 @@
 
 ### INIT: Define Variables??
 ```
- RANDOMIZE symbols
+ let topText = document.getElementById('topText');
+ let helpText = document.getElementById('helpText');
+ let nextButton = document.getElementById('nextButton');
+ let goResetButton = document.getElementById('goResetButton');
+
+ function render()
  
 ```
 ### STATE:
