@@ -1,7 +1,8 @@
 body {
     font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
     margin: 2em;
-    background-color: rgb(27, 27, 27);
+    background-color: white;
+    /* background-color: rgb(27, 27, 27); */
   }
   
   h1 {
@@ -16,6 +17,7 @@ body {
     width: 400px;
     margin-left: auto;
     margin-right: auto;
+    border-width: 5px; 
     border-radius: 1em;
     padding: 2em;
     text-align: center;
@@ -33,14 +35,7 @@ body {
     width: 150px;
   }
 
-  #back-button {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 50px;
-    margin: 2em;
-    width: 150px;
-  }
+
 
   #go-restart-button {
     position: absolute;
