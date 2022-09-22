@@ -3,15 +3,7 @@
 let symbols = ['!', '@', '#', '$', '%', '^', '&', '*', '+'];
 let playerSymbol = '';
 
-// function generateSymbols() {
-//     let result = '';
-//     for (let i = 0; i < 99; i++) {
-//         result += ((i+1) + ' - ' + symbols[i % symbols.length] + '<br>');
-
-//     }
-//     console.log(result);
-//     return result
-// }
+// overall function that randomizes the number, assigns symbol and captures the players symbol
 
 let generateNumbers = function() {
     let result = '';
@@ -21,20 +13,20 @@ let generateNumbers = function() {
     playerSymbol = symbols[Math.floor(Math.random() * symbols.length)];
     for (let i = 0; i <= 99; i++) {
         if (i % 9 === 0) {
-            result += i + ' - ' + playerSymbol + '<br>';
+        result += i + ' - ' + playerSymbol + '<br>';
 
     // generates the entire list of numbers and their symbols   
 
         } else {
-            let newSymbol = symbols[Math.floor(Math.random() * symbols.length)];
-            result += i + ' - ' + newSymbol + '<br>';
+            let listSymbol = symbols[Math.floor(Math.random() * symbols.length)];
+            result += i + ' - ' + listSymbol + '<br>';
         }
     }
 
     return result
 }
 
-
+// functions for each card that updates the targeted element
 
 function cardOne() {
     document.getElementById("topText").innerText = "I can read your mind";
@@ -104,5 +96,7 @@ function cardSix() {
     document.getElementById('goResetButton').style.visibility  = 'visible';
     document.getElementById('goResetButton').onclick = function(){cardOne()};
 }
+
+// invokes first card function
 
 cardOne();

@@ -6,13 +6,15 @@
 
 ### INIT:
 ```
-let symbols = array of symbols
-let topText = document.getElementById('topText');
-let helpText = document.getElementById('helpText');
-let nextButton = document.getElementById('nextButton');
-let goResetButton = document.getElementById('goResetButton');
+let symbols - array of symbols
+let playerSymbol - to hold generated symbol
+let generateNumbers - randomizes number
+let topText = document.getElementById('topText');             DID NOT USE
+let helpText = document.getElementById('helpText');           DID NOT USE
+let nextButton = document.getElementById('nextButton');       DID NOT USE
+let goResetButton = document.getElementById('goResetButton'); DID NOT USE
 
-function cardOne()
+function cardOne() - renders card one state
  
 ```
 ### STATE:
@@ -62,7 +64,7 @@ card3
 ### FUNCTION:
  
 ```js
-FUNCTION generateSymbols()
+FUNCTION generateNumbers()
 
 FUNCTION cardOne()
   Update card elements based on page state
