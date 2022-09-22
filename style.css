@@ -12,8 +12,8 @@ body {
 
   .card {
     background-color: white;
-    height: 700px;
-    width: 400px;
+    height: 750px;
+    width: 375px;
     margin-left: auto;
     margin-right: auto;
     border-width: 5px; 
@@ -38,7 +38,17 @@ body {
     width: 325px;
   }
 
+  #goButton {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 60px;
+    margin: 2em;
+    width: 75px;
+    font-size: 1rem;
+    border-radius: 100px;
 
+  }
 
   #goResetButton {
     position: absolute;
