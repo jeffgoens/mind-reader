@@ -1,12 +1,14 @@
 
 
-let symbols = ['!', '@', '#', '$', '%', '^', '&', '*', '?']
+let symbols = ['!', '@', '#', '$', '%', '^', '&', '*', '+'];
 
 function generateSymbols() {
     let result = '';
     for (let i = 0; i < 99; i++) {
-        result += ((i+1) + '-' + symbols[i % symbols.length] + '<br>');
+        result += ((i+1) + ' - ' + symbols[i % symbols.length] + '<br>');
+        
     }
+    console.log(result);
     return result
 }
 
@@ -65,7 +67,7 @@ function cardFour() {
 }
 
 function cardFive() {
-    document.getElementById('topText').innerHTML = 'Symbol shuffle funtion goes here';
+    document.getElementById('topText').innerHTML = generateSymbols();
     document.getElementById('nextButton').style.visibility = 'visible';
     document.getElementById('nextButton').innerHTML = 'REVEAL';
     document.getElementById('nextButton').onclick = function(){cardSix()}
