@@ -1,17 +1,38 @@
 
 
 let symbols = ['!', '@', '#', '$', '%', '^', '&', '*', '+'];
+let playerSymbol = '';
 
-function generateSymbols() {
+// function generateSymbols() {
+//     let result = '';
+//     for (let i = 0; i < 99; i++) {
+//         result += ((i+1) + ' - ' + symbols[i % symbols.length] + '<br>');
+
+//     }
+//     console.log(result);
+//     return result
+// }
+
+let generateNumbers = function() {
     let result = '';
-    for (let i = 0; i < 99; i++) {
-        result += ((i+1) + ' - ' + symbols[i % symbols.length] + '<br>');
-        
+
+    // randomizes the symbols and returns all the numbers that are divisible by 9 and it's associated symbol
+
+    playerSymbol = symbols[Math.floor(Math.random() * symbols.length)];
+    for (let i = 0; i <= 99; i++) {
+        if (i % 9 === 0) {
+            result += i + ' - ' + playerSymbol + '<br>';
+
+    // generates the entire list of numbers and their symbols   
+
+        } else {
+            let newSymbol = symbols[Math.floor(Math.random() * symbols.length)];
+            result += i + ' - ' + newSymbol + '<br>';
+        }
     }
-    console.log(result);
+
     return result
 }
-
 
 
 
@@ -62,7 +83,8 @@ function cardFour() {
 }
 
 function cardFive() {
-    document.getElementById('topText').innerHTML = generateSymbols();
+    // document.getElementById('topText').innerHTML = generateSymbols();
+    document.getElementById('topText').innerHTML = generateNumbers();
     document.getElementById('nextButton').style.visibility = 'visible';
     document.getElementById('nextButton').innerText = 'REVEAL';
     document.getElementById('nextButton').onclick = function(){cardSix()}
@@ -74,11 +96,12 @@ function cardFive() {
 }
 
 function cardSix() {
-    document.getElementById('topText').innerText = 'Returned symbol goes here';
+    // document.getElementById('topText').innerText = 'Returned symbol goes here';
+    document.getElementById('topText').innerText = playerSymbol;
     document.getElementById('nextButton').style.visibility = 'hidden';
     document.getElementById('nextButton').innerText = 'REVEAL';
     document.getElementById('helpText').style.visibility = 'visible';
-    document.getElementById('helpText').innerText = 'Your symbol is:' + "returned symbol";
+    document.getElementById('helpText').innerText = ('Your symbol is:') +''+ playerSymbol;
     document.getElementById('goButton').style.visibility = 'hidden';
     document.getElementById('goResetButton').style.visibility  = 'visible';
     document.getElementById('goResetButton').onclick = function(){cardOne()};
