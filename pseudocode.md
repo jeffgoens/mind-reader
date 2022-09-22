@@ -61,16 +61,19 @@
 ### FUNCTION:
  
 ```js
-FUNCTION nextPage()
+FUNCTION cardOne()
+  document.getElementById('topText').innerHTML = "I can read your mind.";
+  document.getElementById()
 
+FUNCTION cardTwo()
 
-FUNCTION reset()
+FUNCTION cardThree()
 
+FUNCTION cardFour()
 
-FUNCTION shuffle()
+FUNCTION cardFive();
 
-
-FUNCTION changePage()
+FUNCTION cardSix();
 
 
  ```
