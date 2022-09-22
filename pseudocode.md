@@ -1,92 +1,101 @@
 ## Pseudocode for Mind Reader
 
 ### Assumptions:
-  - Are there any assumptions?
+  - None
 
 
-### INIT: Define Variables??
+### INIT:
 ```
- let topText = document.getElementById('topText');
- let helpText = document.getElementById('helpText');
- let nextButton = document.getElementById('nextButton');
- let goResetButton = document.getElementById('goResetButton');
+let symbols = array of symbols
+let topText = document.getElementById('topText');
+let helpText = document.getElementById('helpText');
+let nextButton = document.getElementById('nextButton');
+let goResetButton = document.getElementById('goResetButton');
 
- function render()
+function cardOne()
  
 ```
 ### STATE:
 ```
-  card1
-    topText = active
-    goResetButton = active
-    nextButton = inactive
-    helpText = inactive
-    resetButton = inactive
-    
-  card2
-    topText = active
-    goResetButton = active
-    nextButton = active
-    helpText = active
-    resetButton = active
-    
-  card3
-    topText = active
-    goResetButton = active
-    nextButton = active
-    helpText = active
-    resetButton = active
-    
-   card4
-    topText = active
-    goResetButton = active
-    nextButton = active
-    helpText = active
-    resetButton = active  
+card1
+  topText = active
+  goResetButton = active
+  nextButton = inactive
+  helpText = inactive
+  resetButton = inactive
+  
+card2
+  topText = active
+  goResetButton = active
+  nextButton = active
+  helpText = active
+  resetButton = active
+  
+card3
+  topText = active
+  goResetButton = active
+  nextButton = active
+  helpText = active
+  resetButton = active
+  
+  card4
+  topText = active
+  goResetButton = active
+  nextButton = active
+  helpText = active
+  resetButton = active  
 
-   card5
-    topText = active
-    goResetButton = active
-    nextButton = active
-    helpText = active
-    resetButton = active 
+  card5
+  topText = active
+  goResetButton = active
+  nextButton = active
+  helpText = active
+  resetButton = active 
 
-   card6
-    topText = active
-    goResetButton = active
-    nextButton = active
-    helpText = active
-    resetButton = active 
+  card6
+  topText = active
+  goResetButton = active
+  nextButton = active
+  helpText = active
+  resetButton = active 
 ```
 ### FUNCTION:
  
 ```js
+FUNCTION generateSymbols()
+
 FUNCTION cardOne()
-  document.getElementById('topText').innerHTML = "I can read your mind.";
-  document.getElementById()
+  Update card elements based on page state
 
 FUNCTION cardTwo()
+  Update card elements based on page state
 
 FUNCTION cardThree()
+  Update card elements based on page state
 
 FUNCTION cardFour()
+  Update card elements based on page state
 
 FUNCTION cardFive();
-
+  Update card elements based on page state
+ 
 FUNCTION cardSix();
-
-
+  Update card elements based on page state
+ 
  ```
  
  
  ### START:
  ```
- checkDoorStatus
- checkControlPanel
- checkPasscode
+ generateSymbols
+ cardOne
+ cardTwo
+ cardThree
+ cardFour
+ cardFive
+ cardSix
  
- controlPanel
- motorUnit
+
  ```
  
  
