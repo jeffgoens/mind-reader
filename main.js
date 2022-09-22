@@ -83,7 +83,6 @@ function cardFour() {
 }
 
 function cardFive() {
-    // document.getElementById('topText').innerHTML = generateSymbols();
     document.getElementById('topText').innerHTML = generateNumbers();
     document.getElementById('nextButton').style.visibility = 'visible';
     document.getElementById('nextButton').innerText = 'REVEAL';
@@ -96,12 +95,11 @@ function cardFive() {
 }
 
 function cardSix() {
-    // document.getElementById('topText').innerText = 'Returned symbol goes here';
     document.getElementById('topText').innerText = playerSymbol;
     document.getElementById('nextButton').style.visibility = 'hidden';
     document.getElementById('nextButton').innerText = 'REVEAL';
     document.getElementById('helpText').style.visibility = 'visible';
-    document.getElementById('helpText').innerText = ('Your symbol is:') +''+ playerSymbol;
+    document.getElementById('helpText').innerText = 'Your symbol is:' + '\n'+ playerSymbol;
     document.getElementById('goButton').style.visibility = 'hidden';
     document.getElementById('goResetButton').style.visibility  = 'visible';
     document.getElementById('goResetButton').onclick = function(){cardOne()};
