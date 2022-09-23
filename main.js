@@ -1,4 +1,4 @@
-
+// create the array of symbols you are going to use and an array to hold the symbol
 
 let symbols = ['!', '@', '#', '$', '%', '^', '&', '*', '+'];
 let playerSymbol = '';
@@ -15,6 +15,8 @@ let generateNumbers = function() {
         if (i % 9 === 0) {
         result += i + ' - ' + playerSymbol + '<br>';
 
+    console.log(result);    
+         
     // returns the entire list of numbers and their symbols   
 
         } else {
@@ -22,10 +24,11 @@ let generateNumbers = function() {
             result += i + ' - ' + listSymbol + '<br>';
         }
     }
+    console.log(result);
 
     return result
+    
 }
-
 
 // functions for each card that updates the targeted element
 
@@ -108,6 +111,10 @@ function cardSix() {
     document.getElementById('goResetButton').onclick = function(){cardOne()};
 }
 
+
+
 // invokes first card function
 
 cardOne();
+
+
