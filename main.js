@@ -15,7 +15,7 @@ let generateNumbers = function() {
         if (i % 9 === 0) {
         result += i + ' - ' + playerSymbol + '<br>';
 
-    // generates the entire list of numbers and their symbols   
+    // returns the entire list of numbers and their symbols   
 
         } else {
             let listSymbol = symbols[Math.floor(Math.random() * symbols.length)];
@@ -26,6 +26,7 @@ let generateNumbers = function() {
     return result
 }
 
+
 // functions for each card that updates the targeted element
 
 function cardOne() {
@@ -33,6 +34,7 @@ function cardOne() {
     document.getElementById("nextButton").style.visibility = "hidden";
     document.getElementById("helpText").style.visibility = "hidden";
     document.getElementById("goResetButton").style.visibility = 'hidden';
+    document.getElementById('backButton').style.visibility = 'hidden';
     document.getElementById('goButton').style.visibility = 'visible';
     document.getElementById("goButton").onclick = function(){cardTwo()};
     document.getElementById('goButton').innerText = 'GO';
@@ -45,6 +47,8 @@ function cardTwo() {
     document.getElementById('nextButton').onclick = function(){cardThree()}
     document.getElementById('helpText').style.visibility = 'visible';
     document.getElementById('helpText').innerText = 'when you have your number click next';
+    document.getElementById('backButton').style.visibility = 'visible';
+    document.getElementById('backButton').onclick = function(){cardOne()};
     document.getElementById('goButton').style.visibility = 'hidden';
     document.getElementById('goResetButton').style.visibility  = 'visible';
     document.getElementById('goResetButton').onclick = function(){cardOne()};
@@ -56,7 +60,9 @@ function cardThree() {
     document.getElementById('nextButton').innerText = 'NEXT';
     document.getElementById('nextButton').onclick = function(){cardFour()}
     document.getElementById('helpText').style.visibility = 'visible';
-    document.getElementById('helpText').innerText = 'Ex: 14 is 1 + 4 + 5 click next to proceed';
+    document.getElementById('helpText').innerText = 'Ex: 14 is 1 + 4 = 5 click next to proceed';
+    document.getElementById('backButton').style.visibility = 'visible';
+    document.getElementById('backButton').onclick = function(){cardTwo()};
     document.getElementById('goButton').style.visibility = 'hidden';
     document.getElementById('goResetButton').style.visibility  = 'visible';
     document.getElementById('goResetButton').onclick = function(){cardOne()};
@@ -69,6 +75,8 @@ function cardFour() {
     document.getElementById('nextButton').onclick = function(){cardFive()}
     document.getElementById('helpText').style.visibility = 'visible';
     document.getElementById('helpText').innerText = 'Ex: 14 - 5 = 9 click next to proceed';
+    document.getElementById('backButton').style.visibility = 'visible';
+    document.getElementById('backButton').onclick = function(){cardThree()};
     document.getElementById('goButton').style.visibility = 'hidden';
     document.getElementById('goResetButton').style.visibility  = 'visible';
     document.getElementById('goResetButton').onclick = function(){cardOne()};
@@ -80,7 +88,9 @@ function cardFive() {
     document.getElementById('nextButton').innerText = 'REVEAL';
     document.getElementById('nextButton').onclick = function(){cardSix()}
     document.getElementById('helpText').style.visibility = 'visible';
-    document.getElementById('helpText').innerText = 'Find your new number. Match the symbol beside the number';
+    document.getElementById('helpText').innerText = 'Find your new number. Match the symbol to the number';
+    document.getElementById('backButton').style.visibility = 'visible';
+    document.getElementById('backButton').onclick = function(){cardFour()};
     document.getElementById('goButton').style.visibility = 'hidden';
     document.getElementById('goResetButton').style.visibility  = 'visible';
     document.getElementById('goResetButton').onclick = function(){cardOne()};
@@ -92,6 +102,7 @@ function cardSix() {
     document.getElementById('nextButton').innerText = 'REVEAL';
     document.getElementById('helpText').style.visibility = 'visible';
     document.getElementById('helpText').innerText = 'Your symbol is:' + '\n'+ playerSymbol;
+    document.getElementById('backButton').style.visibility = 'hidden';
     document.getElementById('goButton').style.visibility = 'hidden';
     document.getElementById('goResetButton').style.visibility  = 'visible';
     document.getElementById('goResetButton').onclick = function(){cardOne()};
