@@ -1,23 +1,11 @@
 ## Pseudocode for Mind Reader
 
-### Assumptions:
-  - None
-
-
-### INIT:
-```
-let symbols - array of symbols
-let playerSymbol - to hold generated symbol
-let generateNumbers - randomizes number
-let topText = document.getElementById('topText');             DID NOT USE
-let helpText = document.getElementById('helpText');           DID NOT USE
-let nextButton = document.getElementById('nextButton');       DID NOT USE
-let goResetButton = document.getElementById('goResetButton'); DID NOT USE
-
-function cardOne() - renders card one state
- 
-```
 ### STATE:
+
+ - Schematic:
+ 
+![image](https://user-images.githubusercontent.com/101759410/191522587-49119355-1747-4173-bf3a-b0dbf96a8089.png)
+
 ```
 card1
   topText = active
@@ -61,6 +49,21 @@ card3
   helpText = active
   resetButton = active 
 ```
+
+### INIT:
+```
+let symbols - array of symbols
+let playerSymbol - to hold generated symbol
+let generateNumbers - randomizes number
+let topText = document.getElementById('topText');             DID NOT USE
+let helpText = document.getElementById('helpText');           DID NOT USE
+let nextButton = document.getElementById('nextButton');       DID NOT USE
+let goResetButton = document.getElementById('goResetButton'); DID NOT USE
+
+function cardOne() - renders card one state
+ 
+```
+
 ### FUNCTION:
  
 ```js
@@ -97,7 +100,6 @@ FUNCTION cardSix();
  cardFive
  cardSix
  
-
  ```
  
  
@@ -105,4 +107,3 @@ FUNCTION cardSix();
  ```
  
  ```
-![image](https://user-images.githubusercontent.com/101759410/191522587-49119355-1747-4173-bf3a-b0dbf96a8089.png)
